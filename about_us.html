@@ -6,92 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Custom CSS -->
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff0f5;
-    }
-
-    nav {
-      background-color: #a9034e;
-      padding: 15px 30px;
-    }
-
-    .navigation {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      padding: 0;
-      margin: 0;
-    }
-
-    a {
-      text-decoration: none;
-      color: white;
-      font-weight: 600;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      padding: 40px 20px;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    h3 {
-      color: #a9034e;
-      font-weight: 700;
-    }
-
-    footer {
-      background-color: #a9034e;
-      padding: 15px;
-      text-align: center;
-    }
-
-    footer a {
-      color: white;
-      margin: 0 10px;
-      font-weight: 500;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <!-- Fonts and CSS: match index.html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Monoton&family=Montserrat:ital,wght@0,200;0,400;0,500;1,300&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+    <a class="navbar-brand grow" href="index.html">gotLost</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <nav>
-    <div class="navigation">
-      <ul class="home_contact">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item grow">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item grow">
+          <a class="nav-link" href="forms/lostForm.html">Lost</a>
+        </li>
+        <li class="nav-item grow">
+          <a class="nav-link" href="forms/foundForm.html">Found</a>
+        </li>
+        <li class="nav-item grow">
+          <a class="nav-link" href="about_us.html">About Us</a>
+        </li>
+        <li class="nav-item grow">
+          <a class="nav-link" href="forms/contactus.html">Contact Us</a>
+        </li>
       </ul>
-      <ul class="login_reg">
-        <li><a href="#">Login</a></li>
-        <li style="color: white">/</li>
-        <li><a href="./forms/register.html">Sign In</a></li>
-      </ul>
+      <a href="./forms/register.html"><i class="fas fa-user signin grow"> SignIn</i></a>
     </div>
   </nav>
 
@@ -163,5 +121,9 @@
     <a href="#">&copy; 2025</a>
   </footer>
 
+  <!-- Optional JavaScript: match index.html -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
